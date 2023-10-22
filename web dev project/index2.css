@@ -1,0 +1,149 @@
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.home {
+    padding: 20px;
+}
+
+.a {
+    margin: 20px;
+    padding: 20px;
+    background-color: #444;
+}
+
+.a h2 {
+    font-size: 24px;
+}
+
+.a ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.b {
+    margin: 20px;
+    padding: 20px;
+    background-color: #444;
+    display: inline-block;
+    width: 200px;
+    position: relative;
+}
+
+.b img {
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Ensure all images have the same width */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add a transition for smooth animations */
+}
+
+.b:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+}
+
+footer {
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Navbar Styles */
+nav {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    margin-left: calc(10% / 6);
+    padding: 1.2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Ensures the navbar is on top of other content */
+    transition: background-color 0.3s; /* Smooth color transition */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ff9900; /* Change link color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Navbar Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the navbar */
+nav {
+    animation: fadeIn 1s;
+}
+
+/* Adjust navbar color when scrolling */
+nav.scrolled {
+    background-color: #222; /* Change background color when scrolling */
+}
