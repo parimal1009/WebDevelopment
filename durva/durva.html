@@ -50,6 +50,8 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             animation: fadeIn 1s ease-in-out;
             transition: box-shadow 0.3s ease-in-out;
+            display: flex;
+            align-items: center; /* Align items vertically in the flex container */
         }
 
         section:hover {
@@ -57,36 +59,29 @@
         }
 
         .durva-image {
-            max-width: 120px;
-            max-height: 120px;
+            max-width: 150px; /* Increase the size as needed */
+            max-height: 150px; /* Increase the size as needed */
             object-fit: cover;
-            margin-bottom: 20px;
+            margin-right: 20px;
             border-radius: 10px;
         }
 
         .school-image {
-            max-width: 250px;
-            max-height: 250px;
+            max-width: 120px; /* Decrease the size as needed */
+            max-height: 120px; /* Decrease the size as needed */
             object-fit: cover;
-            margin-bottom: 20px;
+            margin-right: 20px;
             border-radius: 10px;
             border: 2px solid #ff6f61;
         }
 
-        h2 {
-            color: #ff6f61;
-            transition: color 0.3s ease-in-out;
-        }
-
-        section:hover h2 {
-            color: #e74c3c;
-        }
-
+        h2,
         h3 {
             color: #ff6f61;
             transition: color 0.3s ease-in-out;
         }
 
+        section:hover h2,
         section:hover h3 {
             color: #e74c3c;
         }
@@ -94,6 +89,10 @@
         p {
             line-height: 1.6;
             color: #555;
+        }
+
+        h2 {
+            font-size: 1.5em; /* Increase the font size as needed */
         }
 
         @keyframes fadeIn {
@@ -115,43 +114,63 @@
     </header>
 
     <section>
-        <h2>About Me</h2>
         <img class="durva-image"
-            src="https://i.pinimg.com/1200x/4d/ff/cd/4dffcd8e684c9d31ff83974a232d4da5.jpg" alt="Durva">
-        <p>
-            Hey there! I'm Durva, a 7th-grade student at Wisdom World School. Life is all about dancing to the rhythm,
-            diving into fascinating books, and rocking those grades! Join me on this exciting journey where every day is a
-            new adventure.
-        </p>
+            src="https://github.com/parimal1009/WebDevelopment/blob/main/durva/durva.jpg.jpeg?raw=true" alt="Durva">
+        <div>
+            <h2>About Me</h2>
+            <p>
+                Hey there! I'm Durva, a 7th-grade student at Wisdom World School. Life is all about dancing to the rhythm,
+                diving into fascinating books, and rocking those grades! Join me on this exciting journey where every day is a
+                new adventure.
+            </p>
+        </div>
     </section>
 
     <section>
-        <h2>Wisdom World School</h2>
         <img class="school-image"
             src="https://www.puneinsight.com/wp-content/uploads/2020/06/Wisdom-School.jpeg" alt="Wisdom World School">
-        <p>
-            Wisdom World School is where the magic happens! It's not just a school; it's a place where friendships are
-            made, knowledge is gained, and dreams take flight.
-        </p>
+        <div>
+            <h2>Wisdom World School</h2>
+            <p>
+                Wisdom World School is where the magic happens! It's not just a school; it's a place where friendships are
+                made, knowledge is gained, and dreams take flight.
+            </p>
+        </div>
     </section>
 
-    <!-- The section about Yadvendra remains unchanged -->
+    <section>
+        <div>
+            <h2>Meet Yadvendra</h2>
+            <p>
+                Say hello to Yadvendra, my amazing brother! He's a dedicated student, excelling in academics, and a
+                passionate football player. Whether it's hitting the books or the soccer field, he gives his best!
+            </p>
+        </div>
+    </section>
 
     <section>
         <h2>Interests</h2>
         <p>
-            Dance floors are my happy place, and I love exploring different styles. Books are my magical portals to
-            other worlds, and I'm always ready for the next thrilling chapter. Balancing fun and studies is my secret
-            superpower!
+            Dance floors are my happy place, and I love exploring different styles. Books are my magical portals to other
+            worlds, and I'm always ready for the next thrilling chapter. Balancing fun and studies is my secret superpower!
+            Yadvendra, on the other hand, finds joy in unraveling the mysteries of the universe through his love for
+            astronomy.
         </p>
     </section>
 
     <section>
         <h2>Friends</h2>
-        <p>
-            Life's a party when I'm hanging out with my awesome friends - Merin, Jasneet, Nandika, and many more.
-            Together, we create unforgettable moments filled with laughter and joy!
-        </p>
+        <div class="friends-details">
+            <p>
+                Life's a party when I'm hanging out with my awesome friends - Merin, Jasneet, Nandika, and many more.
+                Together, we create unforgettable moments filled with laughter and joy! Our adventures range from exploring
+                hidden gems in the city to creating our secret handshake that only we understand.
+            </p>
+            <p>
+                Our friendship is like a colorful canvas, each friend adding their unique hue to the masterpiece of our
+                shared memories.
+            </p>
+        </div>
     </section>
 </body>
 
